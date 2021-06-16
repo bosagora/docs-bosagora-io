@@ -10,8 +10,8 @@
    What is Bosagora? <new-to-bosagora/what-is-bosagora.md>
    Trust Contracts <new-to-bosagora/trust-contracts.md>
    Proof of Stake <new-to-bosagora/proof-of-stake.md>
-   Bosagora nodes <new-to-bosagora/>
-   How to purchase BOA <new-to-bosagora/>
+   Bosagora nodes <new-to-bosagora/bosagora-nodes.md>
+   How to purchase BOA <new-to-bosagora/how-to-purcahse-boa.md>
    
 .. toctree::
    :maxdepth: 3
@@ -19,15 +19,15 @@
    :titlesonly:
    :hidden:   
    
-   Consensus algorithm-FBA <learn/>
-   Consensus algorithm-mFBA <learn/>
-   DAO-Congress Network <learn/>
-   DAO-Rewards <learn/>
-   DAO-Commons Budget <learn/>
-   UTXO configurations <learn/>
-   Full nodes <learn/>
-   Quorums-overview <learn/>
-   Quorums-quorum slicing <learn/>
-   Quorums-balancing <learn/>
-   Flash layer <learn/>
+   Consensus algorithm-FBA <learn/consensus-algoithms/fba.md>
+   Consensus algorithm-mFBA <learn/consensus-algoithms/mfba.md>
+   DAO-Congress Network <learn/dao/congress-network.md>
+   DAO-Rewards <learn/dao/rewards.md>
+   DAO-Commons Budget <learn/dao/commons-budget.md>
+   UTXO configurations <learn/utxo-configurations.md>
+   Full nodes <learn/full-nodes.md>
+   Quorums-overview <learn/quorums/overview.md>
+   Quorums-quorum slicing <learn/quorums/quorum-slicing.md>
+   Quorums-balancing <learn/quorums/balancing.md>
+   Flash layer <learn/flash-layer.md>
    
