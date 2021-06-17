@@ -11,3 +11,10 @@ The third protocol is *Delegated Proof of Stake* (DPoS). Like PoS, each node sta
 Obviously, requiring unanimous consensus like PoW and PoS
 
 Bosagora uses a newer consensus algorithm, *Delegated Proof of Stake* (DPoS). With DPoS, nodes still have a stake of tokens, but rather than vote on the blocks in the blockchain, they delegate their voting power to a small subset of trusted nodes. Then these trusted nodes (called *delegates*) vote on the blocks. Since the system has only 20 or so delegates that verify the transactions, DPoS is exceptionally efficient.
+
+Requiring unanimous agreement by all participating nodes (like PoW and PoS) is referred to as a *Byzantine agreement*. DPoS on the other hand, which does not require unanimous agreement by all nodes to reach consensus, is a *Federated Byzantine agreement* (FBA). Since they don’t have to wait for a unanimous vote, FBA protocols result in faster blockchain transactions.
+
+FBA protocols implement a non-unanimous consensus mechanism by grouping nodes into groups (also own as *Quorums*). When a transaction is made, the information is sent to all those in the group. Rather than waiting for the whole network to agree, if a node hears the same message from a sufficient number of trusted nodes, the node assumes the information is correct.
+
+The overlapping of nodes, or loose *federation* of nodes, results in different nodes that have different groups to agree on the same transactions. This leads to a system-wide consensus, without requiring unanimous agreement for each transaction block.
+
