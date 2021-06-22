@@ -19,8 +19,7 @@
    :titlesonly:
    :hidden:   
    
-   Consensus algorithm-FBA <learn/consensus-algoithms/fba.md>
-   Consensus algorithm-mFBA <learn/consensus-algoithms/mfba.md>
+   Consensus algorithm <learn/consensus-algorithm.md>
    DAO-Congress Network <learn/dao/congress-network.md>
    DAO-Rewards <learn/dao/rewards.md>
    DAO-Commons Budget <learn/dao/commons-budget.md>
