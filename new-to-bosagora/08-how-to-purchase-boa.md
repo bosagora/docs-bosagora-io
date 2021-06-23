@@ -9,7 +9,7 @@ Like any other cryptocurrency, BOA can be purchased using one of the exchanges. 
 
 **Step 1 Download a wallet**
 
-1.	Fownload and install a cryptocurrency wallet that supports BOA.
+1.	Download and install a cryptocurrency wallet that supports BOA.
 2.	Create a new wallet and name it.
 3.	Sctivate your new wallet and be sure to write down your new passwords. Your passwords are the only way you can access your wallet so keep them in a safe place and don’t lose them. You will two passwords: one for spending (which is the one used for transacting on an exchange) and a 12- or 24-word passphrase (which depends on the wallet you chose).
 4.	Recreate your passphrase and accept the terms and conditions. The wallet should now be all set.
