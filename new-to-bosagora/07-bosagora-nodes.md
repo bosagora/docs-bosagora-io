@@ -1,3 +1,8 @@
+---
+title: Bosagora Nodes
+metaTitle: Bosagora nodes
+---
+
 In Bosagora, the nodes comprise the blockchain which is called *Agora*. In early blockchains, like Bitcoin, the nodes are responsible for enforcing the consensus algorithm and storing the blocks and not much more. The nodes in Agora have other responsibilities and opportunities.
 
 Node operators in Agora can join *The Congress Network*. The Congress Network, which follows the rule of one node-one vote, is a way for the nodes in the network to participate in democratic decision-making with regard to the evolution of the network.
