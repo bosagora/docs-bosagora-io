@@ -1,3 +1,8 @@
+---
+title: What is a Cryptocurrency?
+metaTitle: What is a cryptocurrency?
+---
+
 The original definition of cryptocurrency was that of digital or virtual money secured by cryptography. There is no physical version of cryptocurrency (like bills or coins). This definition could easily include cryptocurrency issued by your bank or the government.
 
 Today, cryptocurrency has come to mean digital or virtual money, secured by cryptography AND stored on a blockchain. Cryptocurrency is now understood to be *decentralized* cryptocurrency—cryptocurrency stored on a decentralized ledger.
