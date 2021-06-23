@@ -1,3 +1,8 @@
+---
+title: Turst Contracts?
+metaTitle: Trust Contracts?
+---
+
 To add smart contract functionality to blockchain requires a couple of things. First, you’ll need some kind of programming language to create the kind of complex math and algorithms necessary to implement business rules on blockchain.
 
 The first attempts to add smart contracts to blockchain, like Ethereum, included a Turing-complete programming language to write smart contracts. A Turing-complete system can be proven mathematically to be capable of performing any possible calculation or computer program.
