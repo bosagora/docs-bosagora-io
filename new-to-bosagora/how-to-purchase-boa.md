@@ -1,4 +1,7 @@
-# How to Purchase BOA
+---
+title: How to Purchase BOA
+metaTitle: How to purchase BOA
+---
 
 > **Note**: We are not offering investment advice. Please conduct your own research and due diligence, or consult a financial professional before making any investment decisions.
 
