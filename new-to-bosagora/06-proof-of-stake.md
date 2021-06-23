@@ -1,3 +1,8 @@
+---
+title: Proof of Stake?
+metaTitle: Proof of stake?
+---
+
 One of the chief components of any blockchain is the consensus algorithm. The consensus algorithm is the method by which all the nodes in the blockchain come to an agreement on what is in a block before it gets permanently stored there.
 
 Consensus algorithms try and balance two requirements: they should be robust and efficient. In other words, you want the algorithm to ensure consensus using the least amount of resources. There are three main prototocols used in consensus algorithms for blockchains today.
