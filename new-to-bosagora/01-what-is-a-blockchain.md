@@ -1,3 +1,9 @@
+---
+title: What is a Blockchain?
+metaTitle: What is a blockchain?
+---
+
+
 Ever since the beginning, people have been trying to figure out how to get rid of the middleman. Every time you login somewhere on the internet, whether it’s Facebook or your bank, that’s a middleman. And the middleman owns and controls the database you log into. On the internet, up until recently, there was nothing but middlemen.
 
 It would be nice if we could get rid of the middleman. Just let everyone have their own copy of the database so they could interact with each other without a middleman. There are two big challenges with this. First, you have to make sure everyone’s copy of the database is the same and second, you have to make sure nobody messes with it. In other words, you have to trust everyone. And in a network where you don’t know everyone, that can be hard to do.
