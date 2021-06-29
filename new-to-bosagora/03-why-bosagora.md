@@ -1,7 +1,4 @@
----
-title: Why Bosagora?
-metaTitle: Why Bosagora?
----
+# Why Bosagora?
 
 Few technologies are invented and perfected at the same time. Such was the case for the first blockchain, which is the central technology behind Bitcoin—the first decentralized cryptocurrency. The first blockchain was very good at doing the two things it was asked to do: consensus and immutability. Beyond that, it is pretty limited.
 
