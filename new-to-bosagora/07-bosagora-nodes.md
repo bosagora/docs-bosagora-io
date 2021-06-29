@@ -14,10 +14,10 @@ To run a node and receive an incentive as an validator, one must freeze some BOA
 
 Anyone who fulfills the following conditions can become a member of The Congress Network:
 
-* Freeze at least 40,000 BOA and forgo liquidity
-* Operate a full node at a stable network speed (operate in a server or personal computer)
++ Freeze at least 40,000 BOA and forgo liquidity
++ Operate a full node at a stable network speed (operate in a server or personal computer)
 
 The members of The Congress Network can set nodes in two directions depending on their goals: 
 
-* Operating a greater number of nodes increases their voting power
-* Accumlating BOA tokens in a single node reduces node operating costs
++ Operating a greater number of nodes increases their voting power
++ Accumlating BOA tokens in a single node reduces node operating costs
