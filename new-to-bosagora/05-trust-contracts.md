@@ -1,7 +1,4 @@
----
-title: Turst Contracts?
-metaTitle: Trust Contracts?
----
+# Turst Contracts
 
 To add smart contract functionality to blockchain requires a couple of things. First, you’ll need some kind of programming language to create the kind of complex math and algorithms necessary to implement business rules on blockchain.
 
