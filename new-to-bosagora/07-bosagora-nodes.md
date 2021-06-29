@@ -1,7 +1,4 @@
----
-title: Bosagora Nodes
-metaTitle: Bosagora nodes
----
+# Bosagora Nodes
 
 In Bosagora, the nodes comprise the blockchain which is called *Agora*. In early blockchains, like Bitcoin, the nodes are responsible for enforcing the consensus algorithm and storing the blocks and not much more. The nodes in Agora have other responsibilities and opportunities.
 
