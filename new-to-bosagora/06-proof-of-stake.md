@@ -1,7 +1,4 @@
----
-title: Proof of Stake?
-metaTitle: Proof of stake?
----
+# Proof of Stake?
 
 One of the chief components of any blockchain is the consensus algorithm. The consensus algorithm is the method by which all the nodes in the blockchain come to an agreement on what is in a block before it gets permanently stored there.
 
