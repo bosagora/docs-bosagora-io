@@ -1,7 +1,4 @@
----
-title: What is Bosagora?
-metaTitle: What is Bosagora?
----
+# What is Bosagora?
 
 The Bosagora Foundation was founded to make blockchain technology more of a project enabler. To do that, blockchain must be true to its roots of ensuring consensus and immutability in a decentralized network. But to evolve, it must also enable scalability, efficiency and increased functionality, while simultaneously ensuring transparency, legitimacy and fairness. This is what Bosagora does.
 
