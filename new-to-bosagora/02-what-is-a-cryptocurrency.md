@@ -1,7 +1,4 @@
----
-title: What is a Cryptocurrency?
-metaTitle: What is a cryptocurrency?
----
+# What is a Cryptocurrency?
 
 The original definition of cryptocurrency was that of digital or virtual money secured by cryptography. There is no physical version of cryptocurrency (like bills or coins). This definition could easily include cryptocurrency issued by your bank or the government.
 
