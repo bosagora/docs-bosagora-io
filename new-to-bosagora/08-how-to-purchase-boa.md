@@ -1,7 +1,4 @@
----
-title: How to Purchase BOA
-metaTitle: How to purchase BOA
----
+# How to Purchase BOA
 
 > **Note**: We are not offering investment advice. Please conduct your own research and due diligence, or consult a financial professional before making any investment decisions.
 
@@ -20,11 +17,11 @@ Like any other cryptocurrency, BOA can be purchased using one of the exchanges. 
 1.	Explore cryptocurrency exchanges and choose one that supports BOA.
 2.	Create an account. To create an account, exchanges typically require the following information:
 
-  * Full name
-  * Address
-  * Email address and phone number
-  * Payment method (to fund your account)
-  * A document that identifies your personality (passport, driver’s license, ID, etc)
+  + Full name
+  + Address
+  + Email address and phone number
+  + Payment method (to fund your account)
+  + A document that identifies your personality (passport, driver’s license, ID, etc)
 
 We recommend setting up two-factor authentication (2FA) for enhanced security. It usually takes from several minutes to several days for an account to be activated which depends on the exchange you choose.
 
