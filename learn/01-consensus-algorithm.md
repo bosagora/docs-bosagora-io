@@ -1,10 +1,10 @@
-#Consensus Algorithm
+# Consensus Algorithm
 
 The consensus algorithm is central to any blockchain-based currency or system. The consensus algorithm attempts to answer the question, “How can we prove with confidence that all distributed databases hold the same set of information?”
 
 As blockchains have evolved, so too have the consensus algorithms. The first generation were based on a *Byzantine Agreement* (BA). BA requires that all the nodes in the blockchain form a consensus. Requiring unanimous agreement can be challenging as the number of blockchain nodes grows.
 
-##FBA
+## FBA
 
 The next generation of consensus algorithms are based on *Federated Byzantine Agreement* (FBA). Rather than have every node in the blockchain vote on consensus, a network consisting of *quorums* votes on consensus, where each quorum is a set of nodes sufficient to reach an agreement. The consensus process is achieved via the quorums, and the collective agreement of the quorums is used as the final decision of the entire network. FBA powers the [Stellar Network](https://www.stellar.org/), the 8th largest cryptocurrency with a market capitalization of over $2.5 billion.
 
@@ -12,7 +12,7 @@ There are two main features that make FBA suitable for the Bosagora consensus pr
 
 Second, because validators are not chosen by someone or some organization, membership in the blockchain is completely **open** to the public. This is in contrast to the Stellar Network, where everyone who wants to join the network needs permission from someone. 
 
-##mFBA
+## mFBA
 
 For Bosagora, it is not only important for anyone to be able to join the network, but also for them to be able to participate in validation without authorization. The way we do that is by combining Proof of Stake (PoS) with FBA, which we refer to as modified FBA (mFBA).
 
