@@ -18,6 +18,40 @@ To ensure The Congress Network is inclusive and efficient, we will implement [Vo
 + Archiving
 + Reporting
 
+Making decisions in The Congress Network follows a 10-step procedure:
+
+1. Join The Congress Network
+    + Freeze at least 40,000 BOA
+    + Operate a full node
+2. Create an activity
+    + Start a discussion
+    + Vote on something
+    + Review something
+3. Enter a guide
+    + Link (optional)
+    + Name of activity
+    + Objective and description
+    + Deadline
+    + Advamced settings (optional)
+    + Commission fees (optional)
+4. Discuss
+    + Write opinions or leave comments
+5. Vote
+    + Recorded in the blockchain
+6. Inspect the vote
+    + The date and time each vote is saved
+    + No redundant votes
+7. Check the quorum for resolution
+    + Initially set as one third of total members
+8. Pass the proposal
+    + Net % positive votes > net % negatives votes by > 10%
+9. Execute the proposal
+    + Do the work
+    + Allocate the Commons Budget according to the Trust Contract
+10. Review/Inspect
+    + Appropriate tasks have been completed
+    + Related expenses are compensated
+
 ## Rewards
 
 Members of The Congress Network can receive rewards (in BOA) for participating in the Congress. There are two ways for them to receive rewards: *confirmation rewards* and *transaction fees*.
