@@ -18,6 +18,8 @@ To ensure The Congress Network is inclusive and efficient, we will implement [Vo
 + Archiving
 + Reporting
 
+## Making Decisions in The Congress Network
+
 Making decisions in The Congress Network follows a 10-step procedure:
 
 1. Join The Congress Network
