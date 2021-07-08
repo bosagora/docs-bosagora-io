@@ -1,4 +1,4 @@
-# Bosagora Nodes
+# Bosagora Full Nodes
 
 In Bosagora, the nodes comprise the blockchain which is called *Agora*. In early blockchains, like Bitcoin, the nodes are responsible for enforcing the consensus algorithm and storing the blocks and not much more. The nodes in Agora have other responsibilities and opportunities.
 
@@ -10,7 +10,7 @@ In addition to decision making opportunities, members of The Congress Network al
 
 Confirmation rewards are given to a node operator when a block is confirmed. Transaction fees are applied to all transactions and consist of a **fixed** transaction fee (i.e., it’s the same amount for all transactions) and a **data** fee which is proportional to the size of the transaction data (i.e., larger data transactions cost more).
 
-To run a node and receive an incentive as an validator, one must freeze some BOA tokens. The frozen tokens funtion as a security deposit against an attempt to forge the blockchain. In other words, if a node tries to forge the blockchain, some of the frozen tokens will be confiscated and sent to the Commons Budget account.
+To run a full node and receive an incentive as an validator, one must freeze some BOA tokens. The frozen tokens funtion as a security deposit against an attempt to forge the blockchain. In other words, if a node tries to forge the blockchain, some of the frozen tokens will be confiscated and sent to the Commons Budget account.
 
 Anyone who fulfills the following conditions can become a member of The Congress Network:
 
