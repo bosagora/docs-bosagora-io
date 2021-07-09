@@ -21,7 +21,15 @@ There are several checks to make sure quorums are generated correctly:
 
 ## Quorum Slicing
 
+In an effort to incorporate trusted business relationships into the consensus process, FBA introduced the concept of a *quorum slice*. A quorum slice is a subset of nodes in a quorum that a given node chooses to trust and depend on. Validators get to decide which other validators they trust, and their list of trusted validators becomes their quorum slice. 
 
-
+Every Bosagora validator node must be part of at least one quorum slice. A individual validator node can however appear in multiple quorum slices. Using quorum slices of trusted nodes not only produces quicker consensus, but also ensures greater stability and reliability. Because these trusted nodes carry more weight in reaching consensus, even if a bad actor were to add a million malicious nodes to the network, it won’t have any effect unless they can convince a critical mass of nodes to include them in their quorum slices.
 
 ## Quorum Balancing
+
+
+
+
+
+
+
