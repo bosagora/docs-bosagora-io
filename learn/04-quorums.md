@@ -27,9 +27,10 @@ Every Bosagora validator node must be part of at least one quorum slice. A indiv
 
 ## Quorum Balancing
 
+The problem with letting validators manually configure quorums is the opportunity for bias and centralization. This is the situation with SCP. The Bosagora team addressed this shortcoming by automating the quorum creation process which is referred to as *quorum balancing*. Quorum balancing helps everyone participate as a validator and is essential to realize a truly open membership.
 
+The idea is to make quorum configuration completely automated so there is no need for manual quorum configuration. Bosagora uses the set of all registered validators to automatically generate each node’s quorum set. This ensures the quorum configuration is sufficiently decentralized.
 
+How does Bosagora ensure fairness in the configuration process? By using the pre-imaging technology from the consensus protocol to derive a randomness seed. This seed is then used as input to a deterministic pseudo-random number generator (PRNG). The PRNG then  generates a specific sequence of numbers for a given seed (which ensures verifiability). This seed is then used to introduce randomness into the quorum.
 
-
-
-
+To further ensure fairness and randomness, the quorums are shuffled at specified intervals. This activity is referred to as *quorum rebalancing*. Currently quorum rebalancing happens every hour.
