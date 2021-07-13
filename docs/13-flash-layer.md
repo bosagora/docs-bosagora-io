@@ -120,6 +120,21 @@ An *invoice* represents a payment between two nodes and used to keep track of th
 
 #### Trustless payment forwarding
 
+For multi-hop payments to work in a decentralized system, there must be a way to forward the payment in a trustless way. In the Flash Layer, this is made possible with the use of *Hashed Timelock Contracts* (HTLC). HTLCs allow for a payment to be redeemed only if a secret is revealed, otherwise the payment is revoked at the end of a timelock.
+
+![hashed timelock contracts](hashed-timelock-contracts.png)
+
+In the example above, Party A generates a random secret and creates a HTLC with a timelock of 6 blocks and hash of the newly generated secret. If Party A reveals the secret to Party B, Party B can redeem the funds using that secret or Party A can get back the funds after timelock of 6 blocks expires. This 9-step sequence is depicted in the graphic below:
+
+(1) The payee generates a secret and passes the hash of the secret to the payee in the invoice.
+(2 – 5) Using that hash, HTLCs are created at each hop of the path, locking the funds in each channel until a timeout expires. Once the chain of HTLCs reaches the payee, it has to reveal the random secret to the previous node to be able to get the payment.
+(6 – 9) This creates a chain reaction of the secret being revealed to each node on the path until it reaches the origin node as a confirmation of a successful payment.
+
+![multi-hop funding](multihop-funding.png)
+
+Once all HTLCs are resolved, intermediate nodes are left with a small profit they made off the fees. If for some reason, a payee never reveals the secret, all HTLCs on the path expire, one by one, starting from the node furthest away from the originating node and all nodes receive their funds back.
+
+Multi-hop payments enable the Flash Layer to scale to near infinite, low fee and almost instantaneous transactions per second trustlessly, while also providing incentive for parties to operate a Flash node and provide liquidity to the network.
 
 
 
