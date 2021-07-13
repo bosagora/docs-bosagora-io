@@ -23,7 +23,7 @@ The benefits of these payment channels include the following:
 + Payments are almost instantaneous. No waiting time for block confirmations.
 + Scales to millions of users, and near infinite transactions/second
 
-The idea of payment channels lead to the Bosagora Flash Layer.
+The idea of payment channels lead to the Bosagora *Flash Layer*.
 
 ## Flash Layer
 
@@ -31,7 +31,7 @@ The Bosagora Flash Layer implements an improved version of Eltoo channels. [Elto
 
 ### Opening a Channel
 
-Channels are opened by the peer that provides the initial funds. This peer is referred to as which *funding peer*. Channels are marked as open with an on-chain transaction called the *funding transaction*. With funding transactions, the funds are locked with a multisig. The funds can only be consumed in a manner that both peers mutually agree on and provide the signatures for.
+Channels are opened by the peer that provides the initial funds. This peer is referred to as the *funding peer*. Channels are marked as open with an on-chain transaction called the *funding transaction*. With funding transactions, the funds are locked with a multisig. The funds can only be consumed in a manner that both peers mutually agree on and provide the signatures for.
 
 The steps are as follows:
 
@@ -39,17 +39,17 @@ The steps are as follows:
 2. The peer either rejects the channel according to its own configuration or accepts it, which triggers a set of additional steps before the channel is actually opened.
 3. Before the funding peer can publish the funding transaction, two off-chain transactions are created and the peers exchange their signatures for them. These transactions are called *trigger* and *settlement*. They give both parties the means to close the channel at any point. The trigger transaction is an off-chain transaction which spends the funds from the funding transaction. If published to the blockchain, it begins a *non-collaborative channel close*.
 4. Once the funding peer collects the required signatures for trigger and settlement transactions, it publishes the funding transaction to the Bosagora network.
-5. Both peers continuously monitor the blockchain for externalization of the funding transaction. Externalization of the funding transaction marks the opening of the channel on the blockchain and the flash nodes start accepting payments on the newly opened channel after that.
+5. Both peers continuously monitor the blockchain for externalization of the funding transaction. Externalization of the funding transaction marks the opening of the channel on the blockchain and the Flash nodes start accepting payments on the newly opened channel after that.
 
 Since the funding transaction is no different than any other transaction, no nodes other than the parties involved are aware of the new channel. Similar to layer-1, the Flash Layer utilizes a *gossip protocol* to ensure the optimal operation of the network. Nodes gossip the necessary information about the newly opened channel to their known network peers.
 
 ### Payments
 
-*Payments* are the exchange of off-chain transactions that happen between the channel peers. Payments update the *channel balance*, which is the distribution of funds between parties. Each payment creates an *update* and a settlement transaction pair.
+*Payments* are the exchange of off-chain transactions that happen between the channel peers. Payments update the *channel balance*, which is the distribution of funds between parties. Each payment creates an *update* and a *settlement transaction* pair.
 
 *Update transactions* attach to the trigger transaction or to a previous update transaction. These update transactions are only published to the blockchain in case of an uncollaborative channel close.
 
-*Settlement transactions* may only attach to exactly the previous trigger or update transaction.  Settlement transactions contains the current balance distribution between the channel parties. Settlement transactions cannot be externalized until their relative time lock expires. Once they are externalized, that marks close of the channel. See the figure below for a visual depiction of a representative transaction.
+*Settlement transactions* may only attach to exactly the previous trigger or update transaction.  Settlement transactions contains the current balance distribution between the channel parties. Settlement transactions cannot be externalized until their relative time lock expires. Once they are externalized, that marks the close of the channel. See the figure below for a visual depiction of a representative transaction.
 
 ![funding transaction](funding-transaction.png)
 
@@ -69,15 +69,15 @@ OP.ENDIF
 
 The IF branch ensures that only an update transaction with newer sequence id can consume the given trigger/update transaction, without any timelock. The ELSE branch allows the corresponding settlement transaction to consume the trigger/update transaction after the timelock expires. With each update/trigger transaction, a new timelock starts, allowing the other party to override it with a newer update transaction if they have one.
 
-This scheme ensures that nodes have enough time to overrule any non-collaborative channel close attempt with a newer update transaction. In the current version of the Bosagora Flash Layer, timelocks are set for 16 blocks, which on average gives little less than 3 hours of time for nodes to react to a non-collaborative channel close.
+This scheme ensures that nodes have enough time to overrule any non-collaborative channel close attempt with a newer update transaction. In the current version of the Bosagora Flash Layer, timelocks are set for 16 blocks, which on average gives a little less than 3 hours of time for nodes to react to a non-collaborative channel close.
 
 ### Closing a channel
 
 Similar to opening a channel, closing a channel requires on-chain transactions. The ideal way to close a channel is the *collaborative channel close*. This requires both parties to be online and agree on a closing balance. In this case, the peers create a *closing transaction* that spends the funding transaction without any trigger/update/settlement transactions in between. This enables instantly closing the channel without waiting on any timelocks and with minimal on-chain fees.
 
-*Closing transaction* is an on-chain transaction that spends the funding transaction and pays peers their share of the initial funds. Once externalized, it marks the closing of the channel.
+A *Closing transaction* is an on-chain transaction that spends the funding transaction and pays peers their share of the initial funds. Once externalized, it marks the closing of the channel.
 
-In situations where a peer is unresponsive or the peers can’t agree on a closing balance, a *non-collaborative channel close* is initiated by one of the peers by publishing the trigger transaction. Externalization of the trigger transaction starts the countdown on a timelock. During the timelock, nodes can publish newer update transactions, if they have  any. After the timelock expires, the corresponding settlement transaction is published and externalization of that marks the channel as closed.
+In situations where a peer is unresponsive or the peers can’t agree on a closing balance, a *non-collaborative channel close* is initiated by one of the peers by publishing the trigger transaction. Externalization of the trigger transaction starts the countdown on a timelock. During the timelock, nodes can publish newer update transactions, if they have any. After the timelock expires, the corresponding settlement transaction is published and externalization of that marks the channel as closed.
 
 ### Multi-hop payments
 
@@ -104,11 +104,11 @@ The first step in supporting multi-hop payments is finding a series of channels 
 
 For privacy, all communications for multi-hop payments are *onion encrypted*, meaning that the packet is encrypted multiple times at the originating node. Each intermediate node decrypts it partially and forwards the packet to the next node by using the information revealed to it. In this manner, no unnecessary information is revealed to any nodes in between, providing the maximum amount of privacy for all parties.
 
-In the case of an error, an error message is propagated back to the originating node. But this time, since no nodes have the full path back to the origin, the packet is obfuscated, instead of encrypted, in a way that only the originating node can de-obfuscate it. The privacy of the parties are protected even in an error state.
+In the case of an error, an error message is propagated back to the originating node. But this time, since no nodes have the full path back to the origin, the packet is obfuscated, instead of encrypted, in a way that only the originating node can de-obfuscate it. The privacy of the parties is protected even in an error state.
 
 #### Path probing
 
-Since paths can fail to forward the payment, there should be a way to retry a different path in such a circumstance. The Flash Layer, and the channels in the layer, are highly dynamic, so there could be multiple reasons why a payment fails. When an error occurs, the erroring node sends a message back to the originating node indicating why it failed. Using this information, the originating node either decides to retry with a different path or marks the payment as a failure and gives up.
+Since paths can fail to forward the payment, there must be a way to retry a different path in such a circumstance. The Flash Layer, and the channels in the layer, are highly dynamic, so there could be multiple reasons why a payment fails. When an error occurs, the erroring node sends a message back to the originating node indicating why it failed. Using this information, the originating node either decides to retry with a different path or marks the payment as a failure and gives up.
 
 #### Channel updates
 
@@ -116,7 +116,7 @@ Some public properties of the channels can be updated throughout the channel’s
 
 #### Invoices
 
-An *invoice* represents a payment between two nodes and used to keep track of the payments. Invoices are generated by the payee and sent to the payer through some medium (QR codes, NFC etc.) outside of the Flash Layer.
+An *invoice* represents a payment between two nodes and is used to keep track of the payments. Invoices are generated by the payee and sent to the payer through some medium (QR codes, NFC etc.) outside of the Flash Layer.
 
 #### Trustless payment forwarding
 
@@ -128,11 +128,11 @@ In the example above, Party A generates a random secret and creates a HTLC with 
 
 (1) The payee generates a secret and passes the hash of the secret to the payee in the invoice.
 (2 – 5) Using that hash, HTLCs are created at each hop of the path, locking the funds in each channel until a timeout expires. Once the chain of HTLCs reaches the payee, it has to reveal the random secret to the previous node to be able to get the payment.
-(6 – 9) This creates a chain reaction of the secret being revealed to each node on the path until it reaches the origin node as a confirmation of a successful payment.
+(6 – 9) This creates a chain reaction of the secret being revealed to each node on the path until it reaches the originating node as a confirmation of a successful payment.
 
 ![multi-hop funding](multihop-funding.png)
 
-Once all HTLCs are resolved, intermediate nodes are left with a small profit they made off the fees. If for some reason, a payee never reveals the secret, all HTLCs on the path expire, one by one, starting from the node furthest away from the originating node and all nodes receive their funds back.
+Once all HTLCs are resolved, intermediate nodes are left with a small profit they made off their fee. If for some reason, a payee never reveals the secret, all HTLCs on the path expire, one by one, starting from the node furthest away from the originating node and all nodes receive their funds back.
 
 Multi-hop payments enable the Flash Layer to scale to near infinite, low fee and almost instantaneous transactions per second trustlessly, while also providing incentive for parties to operate a Flash node and provide liquidity to the network.
 
