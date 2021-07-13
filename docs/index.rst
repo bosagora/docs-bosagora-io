@@ -1,3 +1,10 @@
+Welcome to Bosagora's documentation
+===================================
+
+.. highlight:: js
+
+Contents:
+
 .. toctree::
    :maxdepth: 2
    :caption: New to Bosagora
@@ -16,7 +23,7 @@
    :caption: Learn
    
    09-consensus-algorithm
-   10-da0
+   10-dao
    11-utxo-configuration
    12-quorums
    13-flash-layer
