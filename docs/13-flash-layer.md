@@ -71,3 +71,15 @@ The IF branch ensures that only an update transaction with newer sequence id can
 
 This scheme ensures that nodes have enough time to overrule any non-collaborative channel close attempt with a newer update transaction. In the current version of the Bosagora Flash Layer, timelocks are set for 16 blocks, which on average gives little less than 3 hours of time for nodes to react to a non-collaborative channel close.
 
+### Closing a channel
+
+Similar to opening a channel, closing a channel requires on-chain transactions. The ideal way to close a channel is the *collaborative channel close*. This requires both parties to be online and agree on a closing balance. In this case, the peers create a *closing transaction* that spends the funding transaction without any trigger/update/settlement transactions in between. This enables instantly closing the channel without waiting on any timelocks and with minimal on-chain fees.
+
+*Closing transaction* is an on-chain transaction that spends the funding transaction and pays peers their share of the initial funds. Once externalized, it marks the closing of the channel.
+
+In situations where a peer is unresponsive or the peers can’t agree on a closing balance, a *non-collaborative channel close* is initiated by one of the peers by publishing the trigger transaction. Externalization of the trigger transaction starts the countdown on a timelock. During the timelock, nodes can publish newer update transactions, if they have  any. After the timelock expires, the corresponding settlement transaction is published and externalization of that marks the channel as closed.
+
+
+
+
+
