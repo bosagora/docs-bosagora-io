@@ -51,7 +51,7 @@ Since the funding transaction is no different than any other transaction, no nod
 
 *Settlement transactions* may only attach to exactly the previous trigger or update transaction.  Settlement transactions contains the current balance distribution between the channel parties. Settlement transactions cannot be externalized until their relative time lock expires. Once they are externalized, that marks close of the channel. See the figure below for a visual depiction of a representative transaction.
 
-![flash layer routing](flash-layer-routing.png)
+![funding transaction](funding-transaction.png)
 
 ### Sequence IDs
 
