@@ -67,3 +67,13 @@ nav:
     - Flash Layer: 13-flash-layer.md
   - Releases:
     - Changelog: changelog.md
+  - Wallet:
+    - BOA Wallet Guide: ./wallet/01-wallet-guide.md
+    - Web Wallet:
+      - Introduction: ./wallet/web/01-introduction.md
+      - Getting Started: ./wallet/web/02-getting-started.md
+      - How to: ./wallet/web/03-how-to.md
+    - Mobile App Wallet:
+      - Introduction: ./wallet/mobile/01-introduction.md
+      - Getting Started: ./wallet/mobile/02-getting-started.md
+      - How to: ./wallet/mobile/03-how-to.md
