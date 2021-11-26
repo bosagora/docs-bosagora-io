@@ -13,6 +13,7 @@ copyright: Copyright &copy; 2021 BOSAGORA
 
 # Configuration
 theme:
+  language: kr
   name: material
   custom_dir: docs/overrides
 
@@ -35,6 +36,13 @@ theme:
 
 # Customization
 extra:
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: 한국어
+      link: /kr/
+      lang: kr
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/bosagora1
@@ -67,3 +75,13 @@ nav:
     - Flash Layer: 13-flash-layer.md
   - Releases:
     - Changelog: changelog.md
+  - 월렛:
+    - BOSAGORA 월렛 가이드: ./wallet/01-wallet-guide.md
+    - 웹월렛:
+      - 소개: ./wallet/web/01-introduction.md
+      - 시작하기: ./wallet/web/02-getting-started.md
+      - 사용법: ./wallet/web/03-how-to.md
+    - 모바일 앱 월렛:
+      - 소개: ./wallet/mobile/01-introduction.md
+      - 시작하기: ./wallet/mobile/02-getting-started.md
+      - 사용법: ./wallet/mobile/03-how-to.md
