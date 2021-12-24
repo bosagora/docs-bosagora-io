@@ -3,18 +3,18 @@
 ## Login
 
 ![Language](./assets/login-01.png)
-When there is no registered account, The web wallet shows the login screen.  
+When there is no registered account, the web wallet shows the login screen.  
 You can choose a language here. 
-Then, press the button Create New Account to move to the next screen. 
-You can change the language using the menu Setting in the wallet.
+Then , press  "Create New Account” to move to the next screen. 
+You can change the language using the menu "Settings” in the wallet.
 
 ![Login](./assets/login-02.png)
-You can start the wallet by entering a secret key or public key and the name of your account, 
-and then pressing the button OK. 
-If you don't have a secret key or a public key, you can generate a new key by pressing the button Create. 
+You can start your wallet by entering a secret key or public key and the name of your account, 
+and then by pressing the button "OK". 
+If you don't have a secret key or a public key, you can generate a new key by pressing the button "Create". 
 The web wallet does not keep the secret key generated here. 
-You must enter a secret key when logging on the web wallet again. 
-If you haven't backed up your secret key, 
+you must enter a secret key when logging back into the web wallet. 
+If you haven't backed your secret key up, 
 you won't be able to use the funds transferred to the account, so be extra careful.  
 A detailed description of the account is provided in [Manage accounts](./01-introduction.md#manage-accounts).
 
@@ -31,7 +31,7 @@ You can see the last 10 completed transactions and pending transactions of the s
 
 **Transactions History**
 
-You can see the past transactions of the selected account here. 
+You can see past transactions of the selected account here. 
 
 **Send BOA**
 
@@ -53,10 +53,10 @@ You can store data in the blockchain here.
 
 **Contact List**
 
-The contact is the address you often use when you transfer. 
+The contact list is an address book that contains the addresses frequently used when transferring. 
 Contacts make it easy for users to select addresses when transferring. 
 Therefore, you can easily distinguish transaction details 
-by the contact name registered in the contact instead of the other party's address.
+by the contact name registered in the contact list instead of the other party's address.
 
 **Setting**
 
@@ -75,18 +75,16 @@ You can also copy the public key of the account, delete the account, and add a n
 
 **Network selection**
 
-There are two networks in BOSAGORA. One is CoinNet, and the other is TestNet. 
+There are two networks in BOSAGORA.: CoinNet and TestNet. 
 CoinNet is a network in which actual coins with value are transmitted. 
-TestNet is used to test, and the coins here do not have actual value.
+TestNet is used to test the networks and the coins here do not have actual value.
 
 **Balance**
 
-The web wallet shows two types of balance. 
-One is the balance of the selected account, 
-and the other is the sum of all registered accounts. 
+The web wallet shows two types of balance: the balance of the selected account, and the sum of all registered accounts
 In addition, the balance can be subdivided into the following. 
 
-* Total balance : This is the sum of all UTXOs held by the account. 
+* Total balance : This is the sum of all UTXO held by the account. 
 * Spendable balance: This is the sum of UTXO that can be spent on the account. 
 * Frozen balance : The sum of the frozen UTXO. 
 * Locked balance : This is the sum of UTXO that cannot be used for a certain period.   
@@ -115,19 +113,19 @@ This screen consists of two areas: Recent Transactions and Pending Transactions.
 
 **Recent Transactions**
 
-The web wallet only shows transactions in
+The web wallet only shows transactions in 
 which the address of the selected account among the recent transactions stored 
 in the blockchain is the same as either the sender's address, or the receiver's address.  
-The fields consist of Transaction type, Time, Amount, and Peer.  
+This section includes Transaction Type, Time, Amount, and Peer.  
 The top record is the most recently generated transaction. 
-When one record is selected, detailed transaction information is provided.   
+When one record is selected, transaction information details are provided.   
 
 * Transaction type are Inbound, Outbound, Freezing, and Payload. 
     + Inbound : Funds are added to the selected account. 
     + Outbound : Funds are withdrawn from the selected account.
     + Freezing : Used to create a validator.
     + Payload : Used to store data in the blockchain.
-* Amount : The amount that was received, or spent.
+* Amount : The amount that was received or spent.
 * Peer : The address that sent (or received) the funds.
 
 **Pending Transactions**
@@ -135,7 +133,7 @@ When one record is selected, detailed transaction information is provided.
 The web wallet only shows transactions in which 
 the address of the selected account among the transactions waiting to be stored 
 in the blockchain is the same as one of the sender's addresses.  
-The fields consist of Submission time, Block delay, Amount, Target, Fee, and Action.  
+This section consists of Submission time, Block delay, Amount, Target, Fee, and Action.  
 
 * Submission time : Time at which Stoa received the transaction.  
 * Block delay : Number of blocks externalized since then.  
@@ -156,11 +154,11 @@ because it may be stored in a block during the cancellation process.
 The web wallet only shows transactions in which the address of the selected account 
 among the recent transactions stored in the blockchain is the same as either the sender's address, 
 or the receiver's address.  
-The fields consist of Transaction type, Time, Amount, and Peer.  
+The section consist of Transaction Type, Time, Amount, and Peer.  
 The top record is the most recently generated transaction. When one record is selected, 
 detailed transaction information is provided.  
 
-* Transaction type are Inbound, Outbound, Freezing, and Payload.
+* Transaction Types include : Inbound, Outbound, Freezing, and Payload.
     + Inbound : Funds are added to the selected account. 
     + Outbound : Funds are withdrawn from the selected account.
     + Freezing : Used to create a validator.

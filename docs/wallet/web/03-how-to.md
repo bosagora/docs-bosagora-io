@@ -1,6 +1,6 @@
 # How to
 
-## How to add an account?
+## How to Add an Account?
 
 Click on the account at the top of the screen, 
 and you will see a menu called "Add New Account".  
@@ -17,22 +17,22 @@ When creating a new secret key, click the button "Create".
 ![Add a new account](./assets/how-to-03.png)
 
 Copy the newly created secret key and public key. 
-You can click and copy the icon to the right of each key, 
-and you have to store the copied key in a separate storage, 
-and click the check box below, 
-and click the button "OK" to close this pop-up window.
+You can click and "Copy" the icon to the right of each key, 
+store the copied key in a separate storage, 
+click the check box below, 
+and then click the button "OK" to close this pop-up window.
 
 ![Add a new account](./assets/how-to-04.png)
 
-You enter the secret key you copied and the name of the account, and click the button OK.  
+You may enter the secret key you copied and the name of the account, and click the button "OK."
 
 ![Add a new account](./assets/how-to-05.png)
 
-Wallet adds a new account and allows the added account to be selected.
+The wallet adds a new account and allows the added account to be selected.
 
 <hr>
 
-## How to copy the public key?
+## How to Copy the Public Key?
 
 When you click the account at the top of the screen, a pop-up menu appears. 
 There are two icons to the right of each account. 
@@ -40,15 +40,15 @@ The first icon is the ability to copy the public key each account has to the cli
 
 <hr>
 
-## How to delete an account?
+## How to Delete an Account?
 
 Click on the account at the top of the screen to see a pop-up menu. 
 There are two icons to the right of each account. 
-When you click the second icon, the selected account is deleted.
+When clicking on the second icon, the selected account is deleted.
 
 <hr>
 
-## How to send BOA?
+## How to Send BOA?
 
 You can select the menu "Send BOA" to send the BOA to the desired address.  
 This screen consists of three areas: Receivers, Fee, and Senders.  
@@ -66,9 +66,10 @@ A detailed description of the fee is [here][1].
 
 **Senders**
 
-The field consists of Address, Drawn, Remaining, Spendable Balance, Balance, and Action. 
-You can fill the insufficient amount of transfer by adding several accounts they send. 
-At this time, the account must be registered in the wallet first.
+This section consists of Address, Drawn, Remaining, Spendable Balance, Balance, and Action.
+You can make up for an insufficient transfer amount in one account,
+by adding or combining a sum from your other accounts.
+However, before doing this, the accounts must be first registered in the wallet.
 
 * Address : The address of the added account.
 * Drawn : The amount that would be withdrawn on the added account.
@@ -80,10 +81,10 @@ If the Remaining is zero after you add one account,
 you no longer need to add an account. However, 
 if the Remaining is greater than 0, a new account must be added. 
 If added account's Remaining is zero, 
-it means that the sum of the spendable balances of all accounts is greater than or equal to the transfer amount. 
-In this case, the button Next is activated. 
-When you press the button Next to proceed to the next step, 
-The wallet provides a window for entering a secret key for an account 
+it means that the sum of the spendable balances of all accounts is greater than or equal to the transfer amount.
+In this case, the button "Next" is activated. 
+When you press the button "Next" to proceed to the next step, 
+the wallet provides a window for entering a secret key for an account 
 with only a public key registered among the added accounts.
 
 ![Transaction Overview](./assets/send-boa-02.png)
@@ -91,34 +92,35 @@ with only a public key registered among the added accounts.
 **Transaction Overview**
 
 When a transaction is successfully created, 
-it shows the details of the transaction. 
-You must finally check the amount and address.
+it shows the details of the transaction. To finalize, 
+you must check the amount and address after making a transaction.
 
 **Send Transaction**
 
-When you click the button OK, the transaction is sent to the node. 
-If normally received by the node, you can check the pending transactions on the [Overview][3]. 
+After clicking the button "OK", the transaction is sent to the node. 
+If the transaction is successfully received by the node, 
+you can check the pending transactions on the [Overview][3]. 
 Also, if the transaction has already been stored in the blockchain, 
-you can check it in the [Transactions History][4].
+you can check it in your [Transactions History][4]. 
 
 <hr>
 
-## How to create validator?
+## How to Create a Validator?
 
-You can select the menu "Create Validator" to create the validator's account.  
-This screen consists of Freezing Amount, Validator Address, Fee, and Senders.
+Select "Create Validator" in the menu to create the validator's account.  
+This section consists of Freezing Amount, Validator Address, Fee, and Senders.
 
 ![Create Validator](./assets/create-validator-01.png)
 
 **Freezing Amount**
 
-To become a validator, you need to have more than 40,000 BOA of frozen funds. 
+To become a validator, you need to have more than 40,000 BOA of frozen funds.
 The freezing amount is 40,000 BOA when the staking unit is zero, 
 and each time the staking unit increases by 1, it increases by 10,000 BOA.
 
 **Validator Address**
 
-The validator's secret key is newly created and used. At this time, 
+The validator's secret key is newly created and used. When this happens, 
 the newly created validator's secret key is registered directly to the account. 
 The user must record and keep the secret key of this new validator separately. 
 Otherwise, the funds transferred to the new account will not be available.
@@ -129,9 +131,10 @@ A detailed description of the fee is [here][1].
 
 **Senders**
 
-The field consists of Address, Drawn, Remaining, Spendable Balance, Balance, and Action. 
-You can fill the insufficient amount of transfer by adding several accounts they send. 
-At this time, the account must be registered in the wallet first.
+This section consists of Address, Drawn, Remaining, Spendable Balance, Balance, and Action.
+You can make up for an insufficient transfer amount in one account,
+by adding or combining a sum from your other accounts.
+However, before doing this, the accounts must be first registered in the wallet.
 
 * Address : The address of the added account.
 * Drawn : The amount that would be withdrawn on the added account.
@@ -143,9 +146,9 @@ If the Remaining is zero after you add one account, you no longer need to add an
 However, if the Remaining is greater than 0, a new account must be added. 
 If added account's Remaining is zero, 
 it means that the sum of the spendable balances of all accounts is greater than or equal to the transfer amount. 
-In this case, the button Next is activated.
-When you press the button Next to proceed to the next step, 
-The wallet provides a window for entering a secret key for an account 
+In this case, the button "Next" is activated. 
+When you press the button "Next" to proceed to the next step, 
+the wallet provides a window for entering a secret key for an account 
 with only a public key registered among the added accounts.
 
 ![Transaction Overview](./assets/create-validator-02.png)
@@ -153,27 +156,28 @@ with only a public key registered among the added accounts.
 **Transaction Overview**
 
 When a transaction is successfully created, it shows the details of the transaction. 
-You must finally check the amount and address.
+To finalize, you must check the amount and address after making a transaction.
 
 **Send Transaction**
 
-When you click the button OK, the transaction is sent to the node. 
-If normally received by the node, you can check the pending transactions on the [Overview][3]. 
+After clicking the button "OK", the transaction is sent to the node. 
+If the transaction is successfully received by the node, 
+you can check the pending transactions on the [Overview][3].
 Also, if the transaction has already been stored in the blockchain, 
-you can check it in the [Transactions History][4].
+you can check it in your [Transactions History][4].
 
 <hr>
 
-## How to unfreezing?
+## How to Unfreeze?
 
 You can select the menu "Unfreezing" to release the frozen funds. 
-This screen consists of two areas Selected UTXO and Fee. 
+This screen consists of two sections: Select UTXO and Fee. 
 
 ![Unfreezing](./assets/unfreezing-01.png)
 
-**Unfreezing UTXO**
+**Select UTXO**
  
-Shows the frozen UTXO currently in the selected account. 
+Shows the frozen UTXO currently in the selected account.
 You can select the left check box of the item you want to unfreeze.
 
 **Fee**
@@ -186,21 +190,22 @@ A detailed description of the fee is [here][1].
 
 When a transaction is successfully created, 
 it shows the details of the transaction. 
-You must finally check the amount and address.
+To finalize, you must check the amount and address after making a transaction.
 
 **Send Transaction**
 
-When you click the button OK, the transaction is sent to the node. 
-If normally received by the node, you can check the pending transactions on the [Overview][3]. 
+After clicking the button "OK", the transaction is sent to the node. 
+If the transaction is successfully received by the node, 
+you can check the pending transactions on the [Overview][3]. 
 Also, if the transaction has already been stored in the blockchain, 
-you can check it in the [Transactions History][4].
+you can check it in your [Transactions History][4].
 
 <hr>
 
-## How to store data in blockchain?
+## How to Store Data in Blockchain?
 
 You can select the menu "Store Data" to store data in the blockchain.  
-This screen consists of three areas: Payload, Fee, and Senders.  
+This screen consists of three sections: Payload, Fee, and Senders.
 
 ![Store Data](./assets/store-data-01.png)
 
@@ -214,9 +219,10 @@ A detailed description of the fee is [here][1].
 
 **Senders**
 
-The field consists of Address, Drawn, Remaining, Spendable Balance, Balance, and Action. 
-You can fill the insufficient amount of transfer by adding several accounts they send. 
-At this time, the account must be registered in the wallet first.
+This section consists of Address, Drawn, Remaining, Spendable Balance, Balance, and Action. 
+You can make up for an insufficient transfer amount in one account, 
+by adding or combining a sum from your other accounts. 
+However, before doing this, the accounts must be first registered in the wallet.
 
 * Address : The address of the added account.
 * Drawn : The amount that would be withdrawn on the added account.
@@ -229,27 +235,27 @@ you no longer need to add an account. However,
 if the Remaining is greater than 0, a new account must be added. 
 If added account's Remaining is zero, 
 it means that the sum of the spendable balances of all accounts is greater than or equal to the transfer amount. 
-In this case, the button Next is activated. When you press the button Next to proceed to the next step, 
-The wallet provides a window for entering a secret key for an account with only a public key registered 
+In this case, the button "Next" is activated. When you press the button "Next" to proceed to the next step, 
+the wallet provides a window for entering a secret key for an account with only a public key registered 
 among the added accounts.
-
-![Transaction Overview](./assets/store-data-02.png)
+ 
+![Transaction Overview](./assets/send-boa-02.png)
 
 **Transaction Overview**
 
-When a transaction is successfully created, it shows the details of the transaction. 
-You must finally check the amount and address.
+When a transaction is successfully created, it shows the details of the transaction. To finalize,
+you must check the amount and address after making a transaction.
 
 **Send Transaction**
 
-When you click the button OK, the transaction is sent to the node. 
-If normally received by the node, you can check the pending transactions on the [Overview][3]. 
+After clicking the button "OK", the transaction is sent to the node.
+If the transaction is successfully received by the node, you can check the pending transactions on the [Overview][3].
 Also, if the transaction has already been stored in the blockchain, 
-you can check it in the [Transactions History][4].
- 
+you can check it in your [Transactions History][4].
+
 <hr>
 
-## How to use contact?
+## How to Use the Contact List?
 
 You can save the address of the other party. The user can select the menu "Contact List".
 
@@ -257,8 +263,8 @@ You can save the address of the other party. The user can select the menu "Conta
 
 The contact information consists of address and name. 
 It makes it easy and safe to transfer funds from your account to an address registered in your contact number. 
-Wallet also displays the transaction history as a name on behalf of the address registered in the contact. 
-Therefore, users can easily grasp the contents of the transaction.
+The wallet also displays the transaction history as a name on behalf of the address registered in the contact. 
+Therefore, users can easily grasp the content of the transaction.
 
 **Add Contact**
 
@@ -267,11 +273,11 @@ the input window pops up. You can add by entering their address and contact name
 
 **Edit Contact**
 
-You can change the contact's name by clicking the icon Edit to the right of each contact's item.
+You can change the contact's name by clicking the icon "Edit" to the right of each contact's item.
 
 **Delete Contact**
 
-You can delete the contact by clicking the icon Delete to the right of each contact's item.
+You can delete the contact by clicking the icon "Delete" to the right of each contact's item.
 
 <hr>
 
@@ -297,7 +303,7 @@ You can choose between Local Time and UTC.
 
 **Dark Mode**
 
-You can change the background color of the screen. Dark Mode and Light Mode are provided.
+You can change the background color of the screen to Dark Mode or Light Mode.
 
 [1]:./01-introduction.md#transaction-fee
 [2]:./01-introduction.md#payload-and-payload-fee
